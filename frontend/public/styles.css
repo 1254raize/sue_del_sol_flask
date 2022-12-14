@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: rgb(250, 238, 221);
+    background-image: url("splash.png");
+}
+
+.Logo {
+    position: absolute;
+    margin: 0;
+
+    width: 75px;
+    border-radius: 50%;
+    /* border-style: solid;
+    border-width: 3px; */
+    /* border-color: rgb(136, 128, 92);
+    background-color: rgb(172, 164, 129); */
+}
+
+.title {
+    text-align: center;
+    font-family: Great Vibes;
+    font-size: 5rem;
+    color: rgb(197, 187, 96);
+}
+
+a {
+    color: rgb(136, 172, 173);
+}
+
+.promo-image:hover {
+    opacity: 0.2;
+}
