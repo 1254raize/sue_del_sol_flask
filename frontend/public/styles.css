@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background-color: rgb(250, 238, 221);
-    background-image: url("splash.png");
+    background-color: rgb(255, 255, 255);
+    background-image: url("./images/splash.png");
 }
 
 .Logo {
@@ -19,14 +19,28 @@ body {
 .title {
     text-align: center;
     font-family: Great Vibes;
-    font-size: 5rem;
-    color: rgb(197, 187, 96);
+
+    color: rgb(158, 148, 59);
 }
 
-a {
-    color: rgb(136, 172, 173);
-}
+/* a {
+    color: rgb(170, 173, 121);
+} */
 
 .promo-image:hover {
     opacity: 0.2;
+}
+
+.fruit1 {
+    position: relative;
+    display: flex;
+    top: 25%;
+    right: 20%;
+}
+
+.fruit2 {
+    position: relative;
+    display: flex;
+    right: -30%;
+    aspect-ratio: 1/1;
 }

@@ -16,7 +16,7 @@ export default function Apoyo() {
 
 const apoyos =[
     {
-        image: "../../images/gobierno.jpg",
+        image: "../../images/gobierno.png",
         alt:"Gobierno de Colombia"
 },
 {

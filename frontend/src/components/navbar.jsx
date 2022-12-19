@@ -4,32 +4,29 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import Stack from '@mui/material/Stack';
+import DropdownMenu from "./DropdownMenu"
+
 import Logo from './Logo';
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   return (
-    <Box sx={{  }}>
-      <AppBar position="sticky" sx={{backgroundColor:"rgba(136, 172, 173, 0.3)", transition: "all 0.3s ease-in-out", color:"black"}}>
-        <Toolbar sx={{ml:10}}>
-        
-            <Logo sx={{left: -70, top: 10}}/>
-        
-          <IconButton
-            
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+    <Box sx={{}}>
+      <AppBar position="sticky" sx={{ backgroundColor: "rgba(255, 255, 255, 0.3)", transition: "all 0.3s ease-in-out", color: "black" }}>
+        <Toolbar sx={{ ml: 10 }}>
+
+          <Logo sx={{ left: -70, top: 10 }} />
+
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <h6 style={{fontFamily: "Great Vibes", fontSize:"2rem", margin:0, color:"rgb(197, 187, 96)"}}>Sue del Sol</h6>
+            <h6 style={{ fontFamily: "Great Vibes", fontSize: "2rem", margin: 0, color: "rgb(197, 187, 96)" }}>Sue del Sol</h6>
           </Typography>
-          <Button color="inherit">Login</Button>
+
+          {props.screenSize ? <DropdownMenu /> :
+            <Stack direction="row" spacing={2}>
+              <Button variant="text">Contacto</Button>
+              <Button variant="text">Productos</Button>
+              <Button variant="text">Quienes somos</Button>
+            </Stack>}
         </Toolbar>
       </AppBar>
     </Box>
