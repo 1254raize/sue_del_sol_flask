@@ -27,7 +27,7 @@ function Amazonas(props) {
                 <Grid display="flex" justifyContent="center" xs={12} md={6}>
                     <IsVisible>
                         {(isVisible) => <div>
-                            <Card className="fruit1" sx={{maxWidth:300}}>
+                            <Card className="fruit1" sx={{maxWidth:props.screenSize ? 200: 300}}>
                                 <CardMedia
                                     component="img"
                                     height="auto"
@@ -36,7 +36,7 @@ function Amazonas(props) {
                                     style={imageTransitionStyling(isVisible)}
                                 />
                             </Card>
-                            <Card className="fruit2" sx={{maxWidth:300}}>
+                            <Card className="fruit2" sx={{maxWidth:props.screenSize ? 200: 300}}>
                                 <CardMedia
                                     component="img"
                                     height="auto"
