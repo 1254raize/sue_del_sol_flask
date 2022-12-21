@@ -9,5 +9,15 @@ def home():
     return app.send_static_file("index.html")
 
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path>')
+def catch_all(path):
+    print(path)
+    if str(path) == "styles.css":
+        return app.send_static_file("styles.css")
+    else:
+        return redirect("/")
+
+
 if __name__ == '__main__':
     app.run(debug=True)

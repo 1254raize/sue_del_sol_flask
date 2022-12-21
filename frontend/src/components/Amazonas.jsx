@@ -7,20 +7,16 @@ import Typography from "@mui/material/Typography";
 import IsVisible from "react-is-visible";
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
+import HorizontalImage from "./HorizontalImage";
+import { imageTransitionStyling } from "./constants";
 
 
 function Amazonas(props) {
-    const imageTransitionStyling = (isVisible) => ({
-        opacity: isVisible ? 1: 0,
-        top: isVisible ? 0: "100px",
-        transition: "opacity 2s ease, top 2s ease",
-      });
+
     return (
         <div>
             <h1 className="title" style={{fontSize: "3.5rem"}}>Sumergete en la Amazonia Colombiana</h1>
-            <IsVisible>
-                {(isVisible) => <Image style={imageTransitionStyling(isVisible)} src="../../images/amazonas.jpg" alt="Amazonas" height={props.screenSize ? "300px": "500px"} width="100%" fit="cover" overFlow="Hidden" sx={{objectPosition: "0% 35%"}}/>}
-            </IsVisible>
+            <HorizontalImage image="../../images/amazonas.jpg" screenSize={props.screenSize} alt="Amazonas" fit="cover"/>
             
             <Container maxWidth="md" sx={{mt: "30px"}}>
             <Grid container spacing={1}>
@@ -51,8 +47,9 @@ function Amazonas(props) {
                     </IsVisible>
                     
                 </Grid>
-                <Grid xs md>
+                <Grid xs md sx={{p:"20px"}}>
                     <Typography variant="h3" sx={{fontFamily: "Pacifico"}}>Disfruta de la acidez del Araza</Typography>
+                    <br></br>
                     <Typography variant="h5">Pueba nuestro delicioso sabor a Araza, descubre uno de los sabores más exoticos de nuestra amazonia colombiana</Typography>
                 </Grid>
             </Grid>
