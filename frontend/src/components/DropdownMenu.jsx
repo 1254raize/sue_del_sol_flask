@@ -4,6 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -44,7 +45,7 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Contacto</MenuItem>
+        <MenuItem component={Link} to="/contacto" onClick={handleClose}>Contacto</MenuItem>
         <MenuItem onClick={handleClose}>Productos</MenuItem>
         <MenuItem onClick={handleClose}>Quienes somos</MenuItem>
       </Menu>
