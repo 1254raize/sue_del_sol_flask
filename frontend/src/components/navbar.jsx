@@ -28,7 +28,7 @@ export default function NavBar(props) {
             <Stack direction="row" spacing={2}>
               <Button component={Link} to="/contacto" variant="text">Contacto</Button>
               <Button variant="text">Productos</Button>
-              <Button variant="text">Quienes somos</Button>
+              <Button component={Link} to="/about" variant="text">Quienes somos</Button>
             </Stack>}
         </Toolbar>
       </AppBar>

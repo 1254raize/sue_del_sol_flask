@@ -66,3 +66,19 @@ a {
     right: -30%;
     aspect-ratio: 1/1;
 }
+
+.fruit3 {
+    position: relative;
+    display: flex;
+    top: 50%;
+    aspect-ratio: 1/1;
+
+}
+
+.fruit4 {
+    position: relative;
+    display: flex;
+    right: -30%;
+    top: -25%;
+    aspect-ratio: 1/1;
+}

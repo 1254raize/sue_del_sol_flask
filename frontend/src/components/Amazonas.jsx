@@ -54,6 +54,44 @@ function Amazonas(props) {
                 </Grid>
             </Grid>
             </Container>
+            <Container maxWidth="md" sx={{mt: "30px"}}>
+            
+            <Grid container spacing={1}>
+            <Grid xs md sx={{p:"20px"}}>
+                    <Typography variant="h3" sx={{fontFamily: "Pacifico"}}>Disfruta de la dulzura del copoazú</Typography>
+                    <br></br>
+                    <Typography variant="h5">Prueba una mezcla perfecta entre la acidez y la dulzura, nuestro sabor a copoazú contiene notas achocolatadas con un toque de acidez para equilibra su sabor</Typography>
+                </Grid>
+                <Grid display="flex" justifyContent="center" xs={12} md={6}>
+                    <IsVisible>
+                        {(isVisible) => <div>
+                            <Card className="fruit3" sx={{maxWidth:props.screenSize ? 200: 300}}>
+                                <CardMedia
+                                    component="img"
+                                    height="auto"
+                                    image="../../images/copoasu.jpg"
+                                    alt="Copoazu"
+                                    style={imageTransitionStyling(isVisible)}
+                                />
+                            </Card>
+                            <Card className="fruit4" sx={{maxWidth:props.screenSize ? 200: 300}}>
+                                <CardMedia
+                                    component="img"
+                                    height="auto"
+                                    image="../../images/copoazu2.jpg"
+                                    alt="Copoazu"
+                                    style={imageTransitionStyling(isVisible)}
+                                />
+                            </Card>
+
+
+                        </div>}
+                    </IsVisible>
+                    
+                </Grid>
+                
+            </Grid>
+            </Container>
         </div>
 
     )

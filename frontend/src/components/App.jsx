@@ -4,6 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Footer from "./Footer";
 import Home from "./Home";
 import Contact from "./Contact";
+import About from "./About";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home screenSize={screenSize}/>} />
           <Route path="contacto" element={<Contact screenSize={screenSize}/>}/>
+          <Route path="about" element={<About screenSize={screenSize}/>}/>
           {/* <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoMatch />} /> */}
         </Route>
