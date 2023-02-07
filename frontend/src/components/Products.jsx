@@ -17,8 +17,7 @@ import Image from 'mui-image'
 function Products(props){
     return(
         <div style={{marginTop: "100px"}}>
-
-<Container maxWidth="md" sx={{mt: "30px"}}>
+        <Container maxWidth="md" sx={{mt: "30px"}}>
             <Grid container spacing={1}>
                 <Grid display="flex" justifyContent="center" xs={12} md={6}>
                     <IsVisible>
@@ -44,7 +43,7 @@ function Products(props){
                 </Grid>
             </Grid>
             </Container>
-
+        
         <Container maxWidth="md" sx={{mt: "30px"}}>
             <Grid container spacing={1}>
                 <Grid display="flex" justifyContent="center" xs={12} md={6}>
@@ -59,7 +58,7 @@ function Products(props){
                                     style={imageTransitionStyling(isVisible)}
                                 />
                             </Card>
-                            <Container className="img-combined-2"><Image  src="../../images/copoasu.png" height="auto" sx={{maxWidth:props.screenSize ? 80: 110}}/></Container>
+                            <Container className="img-combined-2"><Image  src="../../images/araza 3.png" height="auto" sx={{maxWidth:props.screenSize ? 75: 100}}/></Container>
                             
 
 
@@ -68,14 +67,12 @@ function Products(props){
                     
                 </Grid>
                 <Grid xs md sx={{p:"20px"}}>
-                    <Typography variant="h3" sx={{fontFamily: "Pacifico"}}>Aperitivo sabor a Copoazu</Typography>
+                    <Typography variant="h3" sx={{fontFamily: "Pacifico"}}>Aperitivo sabor a Arazá</Typography>
                     <br></br>
-                    <Typography variant="h5">¿Que tal algo más dulce? Nuestro aperitivo de copoasu te dara la mezcla perfecta entre acidez y dulzura, con ligeros tonos de cacao</Typography>
+                    <Typography variant="h5">¿Buscas algo más exotico? Nuestro aperitivo de arazá le dara un toque de acidez a tu paladar que te deleitara</Typography>
                 </Grid>
             </Grid>
             </Container>
-        
-        
             <Container maxWidth="md" sx={{mt: "30px"}}>
             <Grid container spacing={1}>
                 <Grid display="flex" justifyContent="center" xs={12} md={6}>
