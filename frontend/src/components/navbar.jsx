@@ -27,7 +27,7 @@ export default function NavBar(props) {
           {props.screenSize ? <DropdownMenu /> :
             <Stack direction="row" spacing={2}>
               <Button component={Link} to="/contacto" variant="text">Contacto</Button>
-              <Button variant="text">Productos</Button>
+              <Button component={Link}  to="/products" variant="text">Productos</Button>
               <Button component={Link} to="/about" variant="text">Quienes somos</Button>
             </Stack>}
         </Toolbar>

@@ -82,3 +82,25 @@ a {
     top: -25%;
     aspect-ratio: 1/1;
 }
+
+.img-combined-1{
+    position: relative;
+    display: flex;
+  
+}
+
+.img-combined-1:hover{
+    transform: rotate(10deg);
+}
+
+.img-combined-2{
+    background-color: rgba(240, 248, 255, 0);
+    position: relative;
+    display: flex;
+    top: -25%;
+    right: -25%;
+}
+
+.img-combined-2:hover{
+    transform: rotate(50deg);
+}

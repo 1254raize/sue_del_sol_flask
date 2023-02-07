@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
+import Products from "./Products";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home screenSize={screenSize}/>} />
           <Route path="contacto" element={<Contact screenSize={screenSize}/>}/>
           <Route path="about" element={<About screenSize={screenSize}/>}/>
+          <Route path="products" element={<Products screenSize={screenSize}/>}/>
           {/* <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoMatch />} /> */}
         </Route>
